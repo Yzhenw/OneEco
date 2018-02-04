@@ -1,0 +1,103 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title></title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="swiper.min.css" >
+        <script src="swiper.min.js"></script>
+            <script src="menufloat.js"></script>
+    </head>
+    <body>
+        <span class="menuzhen" onclick="change()"/>
+                <div id="menuup" class="menu-line-up"></div>
+                <div id="menudown" class="menu-line-down"></div>
+        </span>
+         <div id="menufloat"  class="menufloat">
+                <div class="shouye">首页</div>
+                <div class="line"></div>
+                <div id="move" class="about" onmouseover="moveup()" onmouseout="movedown()" ><a href="" style="text-decoration:none;color:#46A3FF;">关于我们</a></div>
+                <div id="move4" class="about" onmouseover="moveupd()" onmouseout="movedownd()" " ><a href="" style="text-decoration:none;color:#46A3FF;">产品介绍</a></div>
+                <div id="move1" class="project" onmouseover="moveupa()" onmouseout="movedowna()"><a href="http://59.111.103.218/exp2" style="text-decoration:none;color:#46A3FF;">物理实验</a></div>
+                <div id="move2" class="project" onmouseover="moveupb()" onmouseout="movedownb()"><a href="" style="text-decoration:none;color:#46A3FF;">第一商店</a></div>
+                <div id="move3" class="project" onmouseover="moveupc()" onmouseout="movedownc()"><a href="http://59.111.103.218/ssss" style="text-decoration:none;color:#46A3FF;">三生三世</a></div>
+                
+            </div>
+        <center>
+
+            <!--固定置顶菜单&logo-->
+            <div id="logo">
+                <img src="logo.png" style="height:50px;margin-top: 5px;">
+            </div>
+            <div style="height:60px;"></div>
+            <!--轮播图--><!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(p1.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(p2.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(p3.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(p8.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(p7.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(p5.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(p4.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(p6.png)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>  
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper
+(
+    '.swiper-container', 
+    {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: 
+        {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        pagination: 
+        {
+            el: '.swiper-pagination',
+        },
+    }
+);
+</script>
+            <!--关于我们-->
+                <img src="oneecoo.jpg" style="width:100%;">
+                    <div id="qc"><img src="qc.png">
+                    <p class="goal"><strong style="font-size:23px;color:#3C3C3C;">南有公子，倾国倾城</strong><br/><br/>
+                                    本着“选择城哥就是选择了成功”的信仰<br/>
+                                    坚守创造优质产品的精神<br/>
+                                    One Eco的每一位成员在不断努力着<br/><br/>
+                                    <span style="font-size:21px;color:#3C3C3C;">我们的目标是星辰大海。</span></p>
+                </div>
+                <div style="background-color: #97CBFF;"><div class="products"><strong style="color:#7B7B7B;">产品介绍</strong></div></div>
+                <div>
+                    <img src="wulip.jpg" style="width:100%;">
+                    <img src="wuli.jpg" style="width:100%;">
+                </div>
+                <div>
+                    <img src="onestore.jpg" style="width:100%;">
+                </div>
+                <div>
+                    <img src="ssss.jpg" style="width:100%;">
+                </div>
+                <div clss="ss">
+                <div class="ss1"><img src="ss1.jpg" style="width:200px;height:350px;" ></div>
+                <div class="ss2"><img src="ss2.jpg" style="width:200px;height:350px;" ></div>
+                <div class="ss3"><img src="ss3.jpg" style="width:200px;height:350px;" ></div>
+                </div>
+            </div>
+            <!--版权-->
+            <div id="belong">
+                <h5>联系我们：湖北省武汉市洪山区珞喻路1037号</h5>
+                <p><strong style="color:#7B7B7B;font-size: 12px;">OneEcho  All Rights Reserved</strong></p>
+            </div>
+        </center>
+    </body>
+</html>
